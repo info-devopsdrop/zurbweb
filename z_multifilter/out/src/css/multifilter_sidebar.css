@@ -1,0 +1,281 @@
+@import 'ninjastyles.css';
+
+#multifilter_filters {
+    position: relative;
+}
+#mfmask {
+    background-image: url(images/mask.png);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.ajax-loader {
+    display: block;
+    left: 50%;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+}
+
+.attrrow {
+    margin-bottom: 5px;
+    /*overflow: hidden;*/
+    font-size: 14px;
+    line-height: 130%;
+    padding-right: 15px;
+}
+
+.attrcol {
+    float: left;
+    padding: 0 0 10px;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+}
+.attrcol.price_slider {
+    height: auto;
+}
+
+.attrhead {
+    color: #7dbb00;
+    font-weight: 700;
+    min-height: 16px;
+    margin: 3px 0 10px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 25px;
+}
+
+.attrhead:after {
+    content:                 "\f077";
+    font-family:             FontAwesome;
+    font-style:              normal;
+    font-weight:             normal;
+    line-height:             1;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(125, 187, 0, 0.6);
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.attrhead:hover:after {
+    color: rgba(125, 187, 0, 1);
+}
+
+.attrhead.isOpenAttrHead:after {
+    content: "\f078";
+}
+
+.attrbody {
+    margin-left: 5px;
+    clear: both;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.attrhead label {
+    vertical-align: top;
+}
+
+.filterset {
+    margin-bottom: 10px;
+}
+
+.resetline {
+    line-height: 100%;
+    margin-bottom: 3px;
+    min-height: 10px;
+    padding-top: 3px;
+    vertical-align: top;
+}
+
+.resetline img {
+    vertical-align: bottom;
+}
+
+p.attrfilter {
+    margin: 4px 0 0;
+    padding: 0;
+}
+
+p.attrfilter span.lgrey {
+    color: #999;
+}
+
+p.attrfilter label {
+    display: inline-block;
+    line-height: 12px;
+    vertical-align: top;
+    width: 120px;
+}
+
+p.attrfilter label span {
+    display: inline;
+    min-height: 16px;
+    vertical-align: middle;
+}
+
+p.attrfilter label span.checked {
+}
+
+p.attrfilter input[type="checkbox"] {
+    margin: -1px 1px 0 0;
+}
+
+.slider-range {
+    margin-left: 8px;
+    margin-top: 5px;
+    width: 125px;
+    height: 10px;
+}
+
+.slider-amount {
+    margin: 8px 0 0;
+    overflow: auto;
+}
+
+.slidervalbox {
+    background: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    font-size: 11px;
+    margin: 3px 3px 3px 0;
+    padding: 3px;
+    position: relative;
+    width: 44px;
+}
+
+.slidervalbox input[type="text"].slidervalinput {
+    border: 0;
+    line-height: 15px;
+    height: 15px;
+    font-size: 11px;
+    padding: 0;
+    text-align: center;
+    width: 37px;
+}
+.slidervalto {
+    float: left;
+    font-size: 11px;
+    height: 15px;
+    margin: 3px 3px 3px 0;
+}
+.slidersubmit {
+    float: left;
+    margin: 3px 0;
+}
+.submitButton.slidersubmitbutton {
+    width: 35px;
+    padding: 0;
+}
+
+.colorpick {
+    border: 2px solid #fff;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin: 0 4px 3px 0;
+    width: 20px;
+}
+
+.colorpick.active,.colorpick:hover {
+    border-color: #666;
+}
+
+.colorpick.disabled,.colorpick.disabled:hover {
+    border-color: #eee;
+    cursor: default;
+}
+
+.colorpick_picker {
+    background-image: url(swatches/enabled.png);
+    border: 1px solid #fefefe;
+    height: 18px;
+    margin: 0;
+    width: 18px;
+}
+
+.colorpick_picker.disabled {
+    background-image: url(swatches/disabled.png);
+}
+
+.pageHead + #listcontent {
+    margin-top: -16px;
+}
+
+.attrcol a.multifilter_reset_icon {
+    float: right;
+}
+
+div.multifilter_reset_link {
+    margin-bottom: 10px;
+    float: none;
+}
+
+div.multifilter_reset_link a {
+    color: #696969;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.multifilter_reset_link a:hover {
+    color: #7dbb00;
+}
+
+div.mfshowmore, div.mfshowless {
+    color: #696969;
+    cursor: pointer;
+    margin: 4px 0px 4px 0px;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+div.mfshowmore:hover, div.mfshowless:hover {
+    color: #7dbb00;
+}
+span.backarrow {
+    width: 10px;
+    height: 8px;
+    background-image: url(../../img/backarrow.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#multifilter_filters .selectorsBox {
+    margin: 0;
+    padding: 0;
+}
+#multifilter_filters .dropDown {
+    min-width: 140px;
+    padding-right: 0;
+}
+#multifilter_filters .dropDown p{
+    padding-left: 5px;
+}
+#multifilter_filters .dropDown ul {
+    cursor: default;
+}
+#multifilter_filters .dropDown ul li {
+    cursor: pointer;
+}
+#multifilter_filters .dropDown ul li.disabled {
+    pointer-events: none;
+    cursor: default;
+    display: none; /* remove to show disabled values */
+}
+#multifilter_filters .dropDown .value {
+    padding: 3px 0;
+}
+.price_slider .attrbody {
+    padding: 0;
+    overflow: auto;
+}

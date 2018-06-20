@@ -1,0 +1,7 @@
+[{assign var='oConf' value=$oView->getConfig()}]
+[{if !$oConf->getConfigParam('blMfHideSidebarNavigation')}]
+    [{$smarty.block.parent}]
+[{/if}]
+[{if $oView->getClassName() == "alist"}]
+    [{include file=$oViewConf->getModulePath('z_multifilter',"views/blocks/inc/sidebar_filters.tpl")}]
+[{/if}]

@@ -1,0 +1,5 @@
+[{if $oView->getClassName() == "alist"}]
+    [{include file=$oViewConf->getModulePath('z_multifilter',"views/blocks/inc/page_list_listbody.tpl")}]
+[{else}]
+    [{$smarty.block.parent}]
+[{/if}]

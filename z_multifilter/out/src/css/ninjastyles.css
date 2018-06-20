@@ -1,0 +1,169 @@
+fieldset.ninjastyle
+{
+}	
+fieldset.ninjastyle p
+{
+	position: relative;
+	overflow: hidden;
+}
+fieldset.ninjastyle input[type=text],
+fieldset.ninjastyle input[type=email]
+{
+	border: 1px solid #ccc;
+	line-height: 20px;
+	padding: 3px;
+	width: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+fieldset.ninjastyle label + p,
+fieldset.ninjastyle input + p
+{
+	margin-top: 20px;
+}
+
+fieldset.ninjastyle p > input
+{
+	padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	float: left;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
+fieldset.ninjastyle p > label 
+{ 
+	/*line-height: 16px; */
+	color: #000; 
+	padding: 0 0 0 27px;
+	-moz-transition: color 0.3s ease; 
+	-o-transition: color 0.3s ease; 
+	-webkit-transition: color 0.3s ease; 
+	transition: color 0.3s ease; 
+}
+fieldset.ninjastyle[dir=rtl] p > label {
+	padding: 0 18px 0 0;
+}
+fieldset.ninjastyle p:not(#foo) > input:hover + label, p:not(#foo) > input:focus + label,
+fieldset.ninjastyle p:not(#foo) > input + label:hover, p:not(#foo) > input:focus + label			{ text-decoration: underline; cursor: pointer }
+
+fieldset.ninjastyle p:not(#foo) > input + label
+{
+	background: url(gr_custom-inputs_v.png) -300px -1px no-repeat;
+	min-height: 16px;
+    padding-top: 2px;
+	width: 100%;
+}
+fieldset.ninjastyle p:not(#foo) > input[type=radio] + label									{ background-position: -140px -161px; }
+
+/* Checked styles */
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:checked + label 							{ background-position: -60px -241px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:checked + label 						{ background-position: -220px -81px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:hover:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:checked + label:hover,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:checked + label 					{ background-position: -200px -101px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:hover:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:checked + label:hover,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:checked + label 					{ background-position: -140px -261px; }
+
+/* Hover & Focus styles */
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:hover + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox] + label:hover 							{ background-position: -280px -21px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:hover + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio] + label:hover								{ background-position: -120px -181px; }
+
+/* Active styles */
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:active + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox] + label:hover:active					{ background-position: -260px -41px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:active + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio] + label:hover:active						{ background-position: -100px -201px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:active:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:checked + label:hover:active			{ background-position: -180px -121px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:active:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:checked + label:hover:active				{ background-position: -120px -281px; }
+
+/* Disabled styles */
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:hover:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled + label:hover,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled + label:hover:active			{ background-position: -240px -61px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:hover:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled + label:hover,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled + label:hover:active				{ background-position: -180px -221px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:hover:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled:checked + label:hover,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled:checked + label:hover:active	{ background-position: -160px -141px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:hover:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled:checked + label:hover,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled:checked + label:hover:active		{ background-position: 0 -301px; }
+
+fieldset.ninjastyle[dir=rtl] p > input { left: auto; right: 0; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input + label												{ background-position: -140px -161px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio] + label									{ background-position: -140px -161px; }
+
+/* Checked styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:checked + label 							{ background-position: -160px -241px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:checked + label 						{ background-position: -220px -81px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:hover:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:checked + label:hover,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:checked + label 					{ background-position: -200px -101px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:hover:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:checked + label:hover,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:checked + label 					{ background-position: -140px -261px; }
+
+/* Hover & Focus styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:hover + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox] + label:hover 							{ background-position: -280px -21px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:hover + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio] + label:hover								{ background-position: -120px -181px; }
+
+/* Active styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:active + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox] + label:hover:active					{ background-position: -260px -41px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:active + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio] + label:hover:active						{ background-position: -100px -201px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:active:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:checked + label:hover:active			{ background-position: -180px -121px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:active:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:checked + label:hover:active				{ background-position: -20px -281px; }
+
+/* Disabled styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:hover:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled + label:hover,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled + label:hover:active			{ background-position: -240px -61px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:hover:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled + label:hover,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled + label:hover:active				{ background-position: -80px -221px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:hover:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled:checked + label:hover,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled:checked + label:hover:active	{ background-position: -160px -141px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:hover:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled:checked + label:hover,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled:checked + label:hover:active		{ background-position: 0 -301px; }

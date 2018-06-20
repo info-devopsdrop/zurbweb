@@ -1,0 +1,122 @@
+fieldset.ninjastyle
+{
+	margin: 1em;
+	padding: 20px;
+}	
+fieldset.ninjastyle p
+{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+fieldset.ninjastyle input[type=text],
+fieldset.ninjastyle input[type=email]
+{
+	border: 1px solid #ccc;
+	line-height: 20px;
+	padding: 3px;
+	width: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+fieldset.ninjastyle label + p,
+fieldset.ninjastyle input + p
+{
+	margin-top: 20px;
+}
+
+fieldset.ninjastyle p > input
+{
+	padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	float: left;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
+fieldset.ninjastyle p > label 
+{ 
+	line-height: 16px; 
+	color: #fff; 
+	padding: 0 0 0 22px;
+	-moz-transition: color 1s ease; 
+	-o-transition: color 1s ease; 
+	-webkit-transition: color 1s ease; 
+	transition: color 1s ease; 
+}
+fieldset.ninjastyle[dir=rtl] p > label {
+	padding: 0 18px 0 0;
+}
+fieldset.ninjastyle p:not(#foo) > input:focus + label,
+fieldset.ninjastyle p:not(#foo) > input:focus + label			                            { text-shadow: 1px 1px 3px #000; color: #2C7AD0; }
+
+fieldset.ninjastyle p:not(#foo) > input + label
+{
+	background: url(gr_custom-inputs_mobile.png) 0 -1px no-repeat;
+	height: 16px;
+}
+fieldset.ninjastyle p:not(#foo) > input[type=radio] + label									{ background-position: 0 -161px; }
+
+/* Checked styles */
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:checked + label 							{ background-position: 0 -241px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:checked + label 						{ background-position: 0 -81px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:checked + label 					{ background-position: 0 -101px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:checked + label 					{ background-position: 0 -261px; }
+
+/* Hover & Focus styles */
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus + label						{ background-position: 0 -21px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus + label							{ background-position: 0 -181px; }
+
+/* Active styles */
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:active + label					{ background-position: 0 -41px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:active + label						{ background-position: 0 -201px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:active:checked + label			{ background-position: 0 -121px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:active:checked + label			{ background-position: 0 -281px; }
+
+/* Disabled styles */
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:disabled + label		{ background-position: 0 -61px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:disabled + label			{ background-position: 0 -221px; }
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=checkbox]:focus:disabled:checked + label{ background-position: 0 -141px; }
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:disabled:checked + label,
+fieldset.ninjastyle p:not(#foo) > input[type=radio]:focus:disabled:checked + label	{ background-position: 0 -301px; }
+
+fieldset.ninjastyle[dir=rtl] p > input { left: auto; right: 0; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input + label												{ background-position: 100% -161px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio] + label									{ background-position: 100% -161px; }
+
+/* Checked styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:checked + label 							{ background-position: 100% -241px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:checked + label 						{ background-position: 100% -81px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:checked + label 					{ background-position: 100% -101px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:checked + label 					{ background-position: 100% -261px; }
+
+/* Hover & Focus styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus + label							{ background-position: 100% -21px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus + label								{ background-position: 100% -181px; }
+
+/* Active styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:active + label					{ background-position: 100% -41px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:active + label						{ background-position: 100% -201px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:active:checked + label			{ background-position: 100% -121px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:active:checked + label			{ background-position: 100% -281px; }
+
+/* Disabled styles */
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:disabled + label			{ background-position: 100% -61px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:disabled + label			{ background-position: 100% -221px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=checkbox]:focus:disabled:checked + label	{ background-position: 100% -141px; }
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:disabled:checked + label,
+fieldset.ninjastyle[dir=rtl] p:not(#foo) > input[type=radio]:focus:disabled:checked + label		{ background-position: 100% -301px; }

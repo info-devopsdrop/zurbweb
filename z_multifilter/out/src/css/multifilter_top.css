@@ -1,0 +1,18 @@
+#multifilter_filters .categoryBox {
+    min-height: 0;
+    background: #F3F4F8;
+    border-bottom: 1px solid #B7B7B7;
+}
+.attrrow {
+    width: 100%;
+}
+.attrcol {
+    width: 180px;
+}
+.attrcol .attrhead label {
+    float: left;
+    margin-right: 15px;
+}
+.attrcol a.multifilter_reset_icon {
+    float: left;
+}
